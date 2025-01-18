@@ -1,0 +1,25 @@
+app:
+  name: FileReaderApp
+  version: 1.0.0
+  author: Laureano
+
+database:
+  host: localhost
+  port: 5432
+  username: user123
+  password: pass123
+  name: file_reader_db
+
+logging:
+  level: DEBUG
+  file: /var/log/file_reader_app.log
+
+features:
+  enable_feature_x: true
+  enable_feature_y: false
+  max_retries: 5
+
+api:
+  endpoint: https://api.filereaderapp.com
+  timeout: 30
+  retry_on_failure: true
